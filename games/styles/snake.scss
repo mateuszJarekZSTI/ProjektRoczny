@@ -1,0 +1,82 @@
+.snake {
+    &__container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    }
+    &__background {
+        position: absolute;
+        height: 600px;
+        width: 600px;
+        border-radius: 20px;
+        left: 70px;
+        background-color: #ab91ce;
+    }
+    &__game {
+        z-index: 5;
+        height: 600px;
+        width: 600px;
+        border-radius: 20px;
+        margin-left: 70px;
+
+        &-grid {
+            display: grid;
+            height: 100%;
+            grid-template-columns: repeat(30, 1fr);
+            background-color: #ab91ce;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        &-cell {
+            background-color: #ab91ce;
+        }
+        &-body {
+            background-color: rgb(7, 196, 38) !important;
+        }
+        &-fruit {
+            background-color: rgb(189, 83, 106) !important;
+            border-radius: 20px;
+        }
+        &-setup {
+            display: flex;
+            position: absolute;
+            bottom:calc(84px);
+            left: calc(6.5vw + 600px);
+            flex-wrap: wrap;
+            gap: 2vw;
+        }
+        &-start {
+            font-size: 2rem;
+            text-align: center;
+            color: white;
+            padding: 1vw;
+            border-radius: 20px;
+            background-color: rgb(37, 189, 113);
+            border: 0px black solid;
+            flex-basis: 85%;
+            cursor: pointer;
+        }
+        &-end {
+            font-size: 2rem;
+            text-align: center;
+            color: white;
+            padding: 1vw;
+            border-radius: 20px;
+            flex-basis: 85%;
+            background-color: rgb(155, 84, 90);
+            border: 0px black solid;
+            cursor: pointer;
+        }
+        &-score {
+            text-align: center;
+            flex-basis: 94%;
+            display: block;
+            font-size: 4rem;
+            font-weight: 500;
+            margin-bottom: 50px;
+            color: white;
+        }
+    }
+}

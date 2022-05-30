@@ -1,0 +1,29 @@
+<nav class="nav">
+    <div class="nav__user dropdown">
+        <img class="nav__user-img" src="img\avatar.jpg" alt=""/>
+        <div class="nav__user-verticalLine"></div>
+        <div class="nav__user-name">Destroyerxx</div>
+        <div class="dropdown-menu">
+            <div class="moreInfo">
+                <div class="moreInfo__block">
+                    <div>Godziny w grach: </div><div style="font-size: 40px;margin: 0 0 5px 8px;">10</div>
+                </div>
+                <div class="moreInfo__block">
+                    <div style="text-align: right;">Rozegrane gry: </div><div style="font-size: 40px;margin: 0 0 5px 8px;">1234</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav__baner">
+        Gaming Kingdom
+    </div>
+</nav>
+<script>
+    const dropdown = document.getElementsByClassName('nav__user')[0];
+    function toggleDropdownFunc() {
+        dropdown.classList.toggle('active');
+        console.log('siema');
+    }
+    dropdown.addEventListener("click", toggleDropdownFunc);
+    
+</script>

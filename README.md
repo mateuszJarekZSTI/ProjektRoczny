@@ -1,1 +1,1 @@
-# ProjektRoczny
+# GamingPlatform

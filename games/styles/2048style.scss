@@ -1,0 +1,87 @@
+@use '../../styles/colors' as colors;
+.game2048{
+    &__container {
+        width: calc(100% - 2vw);
+        height: calc(100% - 2vw);
+        position: absolute;
+        background-color: colors.$gameColor;
+        margin: 1vw;
+        display: grid;
+        align-items: center;
+        border-radius: 20px;
+    }
+    &__game{
+        width:600px;
+        height:600px;
+        margin-left: 33px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: white;
+        border-radius: 20px;
+        padding-top: 5px;
+        &-block {
+            flex-basis: 24%;
+            height:24%;
+            color:white;
+            font-size: 40px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rebeccapurple;
+            border-radius: 20px;
+            transition: all 0.2s;
+        }
+        &-btn {
+            position: absolute;
+            top:20px;
+            right: 40px;
+            background-color: transparent;
+            border: 0px black solid;
+            cursor: pointer;
+        }
+        &-setup {
+            display: flex;
+            position: absolute;
+            bottom:calc(84px);
+            left: calc(6.5vw + 600px);
+            flex-wrap: wrap;
+            gap: 2vw;
+        }
+        &-start {
+            font-size: 2rem;
+            text-align: center;
+            color: white;
+            padding: 1vw;
+            border-radius: 20px;
+            background-color: rgb(37, 189, 113);
+            border: 0px black solid;
+            flex-basis: 85%;
+            cursor: pointer;
+        }
+        &-end {
+            font-size: 2rem;
+            text-align: center;
+            color: white;
+            padding: 1vw;
+            border-radius: 20px;
+            flex-basis: 85%;
+            background-color: rgb(155, 84, 90);
+            border: 0px black solid;
+            cursor: pointer;
+        }
+        &-score {
+            text-align: center;
+            flex-basis: 94%;
+            display: block;
+            font-size: 4rem;
+            font-weight: 500;
+            margin-bottom: 50px;
+            color: white;
+        }
+    }
+}
+
+.num2{
+    background-color: #da6868;
+}

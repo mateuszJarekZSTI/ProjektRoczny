@@ -1,0 +1,84 @@
+.game2048__container {
+  width: calc(100% - 2vw);
+  height: calc(100% - 2vw);
+  position: absolute;
+  background-color: #94B3FD;
+  margin: 1vw;
+  display: grid;
+  align-items: center;
+  border-radius: 20px;
+}
+.game2048__game {
+  width: 600px;
+  height: 600px;
+  margin-left: 33px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 20px;
+  padding-top: 5px;
+}
+.game2048__game-block {
+  flex-basis: 24%;
+  height: 24%;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rebeccapurple;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+.game2048__game-btn {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  background-color: transparent;
+  border: 0px black solid;
+  cursor: pointer;
+}
+.game2048__game-setup {
+  display: flex;
+  position: absolute;
+  bottom: 84px;
+  left: calc(6.5vw + 600px);
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+.game2048__game-start {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  padding: 1vw;
+  border-radius: 20px;
+  background-color: rgb(37, 189, 113);
+  border: 0px black solid;
+  flex-basis: 85%;
+  cursor: pointer;
+}
+.game2048__game-end {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  padding: 1vw;
+  border-radius: 20px;
+  flex-basis: 85%;
+  background-color: rgb(155, 84, 90);
+  border: 0px black solid;
+  cursor: pointer;
+}
+.game2048__game-score {
+  text-align: center;
+  flex-basis: 94%;
+  display: block;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.num2 {
+  background-color: #da6868;
+}/*# sourceMappingURL=2048style.css.map */

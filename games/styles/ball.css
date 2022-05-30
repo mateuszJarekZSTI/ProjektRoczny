@@ -1,0 +1,82 @@
+#game {
+  width: 600px;
+  height: 600px;
+  border: 5px solid white;
+  border-radius: 20px;
+  margin-left: 70px;
+  overflow: hidden;
+}
+
+#character {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(175, 58, 185);
+  border-radius: 50%;
+  position: relative;
+  top: 400px;
+  left: 190px;
+  z-index: 1000000;
+}
+
+.block {
+  width: 580px;
+  height: 20px;
+  background-color: rgb(80, 17, 109);
+  border-radius: 20px;
+  position: relative;
+  top: 100px;
+  margin: auto;
+  margin-top: -20px;
+}
+
+.hole {
+  width: 50px;
+  height: 20px;
+  background-color: white;
+  position: relative;
+  top: 100px;
+  margin-top: -20px;
+}
+
+.ball__container {
+  display: flex;
+}
+.ball__game-setup {
+  display: flex;
+  position: absolute;
+  bottom: 84px;
+  left: calc(6.5vw + 600px);
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+.ball__game-start {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  padding: 1vw;
+  border-radius: 20px;
+  background-color: rgb(37, 189, 113);
+  border: 0px black solid;
+  flex-basis: 85%;
+  cursor: pointer;
+}
+.ball__game-end {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  padding: 1vw;
+  border-radius: 20px;
+  flex-basis: 85%;
+  background-color: rgb(155, 84, 90);
+  border: 0px black solid;
+  cursor: pointer;
+}
+.ball__game-score {
+  text-align: center;
+  flex-basis: 94%;
+  display: block;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+  color: white;
+}/*# sourceMappingURL=ball.css.map */

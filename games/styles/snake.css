@@ -1,0 +1,79 @@
+.snake__container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.snake__background {
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  border-radius: 20px;
+  left: 70px;
+  background-color: #ab91ce;
+}
+.snake__game {
+  z-index: 5;
+  height: 600px;
+  width: 600px;
+  border-radius: 20px;
+  margin-left: 70px;
+}
+.snake__game-grid {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(30, 1fr);
+  background-color: #ab91ce;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.snake__game-cell {
+  background-color: #ab91ce;
+}
+.snake__game-body {
+  background-color: rgb(7, 196, 38) !important;
+}
+.snake__game-fruit {
+  background-color: rgb(189, 83, 106) !important;
+  border-radius: 20px;
+}
+.snake__game-setup {
+  display: flex;
+  position: absolute;
+  bottom: 84px;
+  left: calc(6.5vw + 600px);
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+.snake__game-start {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  padding: 1vw;
+  border-radius: 20px;
+  background-color: rgb(37, 189, 113);
+  border: 0px black solid;
+  flex-basis: 85%;
+  cursor: pointer;
+}
+.snake__game-end {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  padding: 1vw;
+  border-radius: 20px;
+  flex-basis: 85%;
+  background-color: rgb(155, 84, 90);
+  border: 0px black solid;
+  cursor: pointer;
+}
+.snake__game-score {
+  text-align: center;
+  flex-basis: 94%;
+  display: block;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+  color: white;
+}/*# sourceMappingURL=snake.css.map */
